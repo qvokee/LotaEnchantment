@@ -1,0 +1,14 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "com.lota.lotaenchantment.mixin",
+  "refmap": "lotaenchantment.refmap.json",
+  "compatibilityLevel": "JAVA_17",
+  "mixins": [
+    "AnvilMenuMixin",
+    "EnchantmentMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
