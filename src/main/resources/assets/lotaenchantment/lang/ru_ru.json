@@ -1,5 +1,13 @@
 {
     "creativetab.lotaenchantment": "Lota Зачаровывание",
     "tooltip.lotaenchantment.enchantments_count": "Зачарований (%s/2)",
-    "enchantment.level.11": "XI"
+    "enchantment.level.11": "XI",
+    "enchantment.lotaenchantment.poison_protection": "Защита от отравления",
+    "enchantment.lotaenchantment.magic_protection": "Защита от магии",
+    "enchantment.lotaenchantment.lightness": "Легкость",
+    "enchantment.lotaenchantment.rogue": "Разбойник",
+    "enchantment.lotaenchantment.life_armor": "Доспех жизни",
+    "enchantment.lotaenchantment.magic_damage": "Магический урон",
+    "enchantment.lotaenchantment.armor_penetration": "Пробитие брони",
+    "enchantment.lotaenchantment.sweep": "Размах"
 }

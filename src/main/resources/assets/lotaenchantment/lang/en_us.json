@@ -1,5 +1,13 @@
 {
     "creativetab.lotaenchantment": "Lota Enchantment",
     "tooltip.lotaenchantment.enchantments_count": "Enchantments (%s/2)",
-    "enchantment.level.11": "XI"
+    "enchantment.level.11": "XI",
+    "enchantment.lotaenchantment.poison_protection": "Poison Protection",
+    "enchantment.lotaenchantment.magic_protection": "Magic Protection",
+    "enchantment.lotaenchantment.lightness": "Lightness",
+    "enchantment.lotaenchantment.rogue": "Rogue",
+    "enchantment.lotaenchantment.life_armor": "Life Armor",
+    "enchantment.lotaenchantment.magic_damage": "Magic Damage",
+    "enchantment.lotaenchantment.armor_penetration": "Armor Penetration",
+    "enchantment.lotaenchantment.sweep": "Sweep"
 }
