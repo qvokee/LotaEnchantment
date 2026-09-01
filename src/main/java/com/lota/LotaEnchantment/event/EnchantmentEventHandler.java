@@ -1,6 +1,7 @@
 package com.lota.lotaenchantment.event;
 
 import com.lota.lotaenchantment.LotaEnchantment;
+import com.lota.lotaenchantment.config.ModConfig;
 import com.lota.lotaenchantment.registry.ModEnchantments;
 import net.minecraft.network.protocol.game.ClientboundUpdateMobEffectPacket;
 import net.minecraft.resources.ResourceLocation;
@@ -11,6 +12,7 @@ import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.ai.attributes.Attribute;
 import net.minecraft.world.entity.ai.attributes.AttributeModifier;
+import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.enchantment.EnchantmentHelper;
 import net.minecraftforge.event.ItemAttributeModifierEvent;
@@ -38,6 +40,7 @@ public class EnchantmentEventHandler {
     private static final Map<EquipmentSlot, UUID> MAGIC_DAMAGE_UUIDS = createSlotMap(UUID.fromString("e5f67890-1234-5678-90ab-cdef12345678"));
     private static final Map<EquipmentSlot, UUID> ARMOR_PEN_UUIDS = createSlotMap(UUID.fromString("f6789012-3456-7890-abcd-ef1234567890"));
     private static final Map<EquipmentSlot, UUID> SWEEP_UUIDS = createSlotMap(UUID.fromString("01234567-890a-bcde-f012-34567890abcd"));
+    private static final Map<EquipmentSlot, UUID> DAMAGE_UUIDS = createSlotMap(UUID.fromString("12345678-9abc-def0-1234-56789abcdef0"));
 
     private static class EffectState {
         int originalDuration;
@@ -103,6 +106,12 @@ public class EnchantmentEventHandler {
             if (sweepLevel > 0) {
                 Attribute maxStrikes = ForgeRegistries.ATTRIBUTES.getValue(new ResourceLocation("epicfight", "max_strikes"));
                 if (maxStrikes != null) event.addModifier(maxStrikes, new AttributeModifier(SWEEP_UUIDS.get(slot), "Sweep Strikes Bonus", sweepLevel * 1.0, AttributeModifier.Operation.ADDITION));
+            }
+
+            int damageLevel = EnchantmentHelper.getItemEnchantmentLevel(ModEnchantments.DAMAGE.get(), stack);
+            if (damageLevel > 0) {
+                double damageBonus = damageLevel * ModConfig.DAMAGE_ENCHANTMENT_BONUS_PER_LEVEL.get();
+                event.addModifier(Attributes.ATTACK_DAMAGE, new AttributeModifier(DAMAGE_UUIDS.get(slot), "Damage Enchantment Bonus", damageBonus, AttributeModifier.Operation.ADDITION));
             }
         }
     }

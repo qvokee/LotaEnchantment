@@ -1,5 +1,5 @@
 {
-    "creativetab.lotaenchantment": "Lota Зачаровывание",
+    "creativetab.lotaenchantment": "Lota Зачарование",
     "tooltip.lotaenchantment.enchantments_count": "Зачарований (%s/2)",
     "enchantment.level.11": "XI",
     "enchantment.lotaenchantment.poison_protection": "Защита от отравления",
@@ -10,6 +10,7 @@
     "enchantment.lotaenchantment.magic_damage": "Магический урон",
     "enchantment.lotaenchantment.armor_penetration": "Пробитие брони",
     "enchantment.lotaenchantment.sweep": "Размах",
+    "enchantment.lotaenchantment.damage": "Урон",
     "attribute.name.irons_spellbooks.spell_resist": "Сопротивление магии",
     "attribute.name.irons_spellbooks.spell_power": "Сила заклинаний",
     "attribute.name.irons_spellbooks.magic_damage": "Магический урон",

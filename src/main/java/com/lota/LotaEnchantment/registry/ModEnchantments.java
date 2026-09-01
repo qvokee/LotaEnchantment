@@ -38,6 +38,9 @@ public class ModEnchantments {
     public static final RegistryObject<Enchantment> SWEEP = ENCHANTMENTS.register("sweep",
             () -> new CustomEnchantment(Enchantment.Rarity.RARE, EnchantmentCategory.WEAPON, EquipmentSlot.MAINHAND));
 
+    public static final RegistryObject<Enchantment> DAMAGE = ENCHANTMENTS.register("damage",
+            () -> new CustomEnchantment(Enchantment.Rarity.RARE, EnchantmentCategory.WEAPON, EquipmentSlot.MAINHAND));
+
     public static void register(IEventBus eventBus) {
         ENCHANTMENTS.register(eventBus);
     }
