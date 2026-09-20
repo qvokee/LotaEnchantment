@@ -9,5 +9,14 @@
     "enchantment.lotaenchantment.life_armor": "Доспех жизни",
     "enchantment.lotaenchantment.magic_damage": "Магический урон",
     "enchantment.lotaenchantment.armor_penetration": "Пробитие брони",
-    "enchantment.lotaenchantment.sweep": "Размах"
+    "enchantment.lotaenchantment.sweep": "Размах",
+    "attribute.name.irons_spellbooks.spell_resist": "Сопротивление магии",
+    "attribute.name.irons_spellbooks.spell_power": "Сила заклинаний",
+    "attribute.name.irons_spellbooks.magic_damage": "Магический урон",
+    "attribute.name.epicfight.weight": "Вес",
+    "attribute.name.epicfight.armor_negation": "Пробитие брони",
+    "attribute.name.epicfight.max_strikes": "Максимум ударов",
+    "attribute.additional_attributes.fishing_luck": "Удача рыбалки",
+    "attribute.additional_attributes.fishing_lure": "Приманка",
+    "attribute.additional_attributes.harvest": "Сбор урожая"
 }

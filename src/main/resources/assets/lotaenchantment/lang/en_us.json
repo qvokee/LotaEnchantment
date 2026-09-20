@@ -9,5 +9,14 @@
     "enchantment.lotaenchantment.life_armor": "Life Armor",
     "enchantment.lotaenchantment.magic_damage": "Magic Damage",
     "enchantment.lotaenchantment.armor_penetration": "Armor Penetration",
-    "enchantment.lotaenchantment.sweep": "Sweep"
+    "enchantment.lotaenchantment.sweep": "Sweep",
+    "attribute.name.irons_spellbooks.spell_resist": "Magic Resistance",
+    "attribute.name.irons_spellbooks.spell_power": "Spell Power",
+    "attribute.name.irons_spellbooks.magic_damage": "Magic Damage",
+    "attribute.name.epicfight.weight": "Weight",
+    "attribute.name.epicfight.armor_negation": "Armor Negation",
+    "attribute.name.epicfight.max_strikes": "Maximum Strikes",
+    "attribute.additional_attributes.fishing_luck": "Fishing Luck",
+    "attribute.additional_attributes.fishing_lure": "Fishing Lure",
+    "attribute.additional_attributes.harvest": "Harvest"
 }
