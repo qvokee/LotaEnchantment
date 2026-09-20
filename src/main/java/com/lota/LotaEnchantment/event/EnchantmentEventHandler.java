@@ -60,7 +60,8 @@ public class EnchantmentEventHandler {
         ItemStack stack = event.getItemStack();
         EquipmentSlot slot = event.getSlotType();
         
-        if (slot.getType() == EquipmentSlot.Type.ARMOR) {
+        if (slot.getType() == EquipmentSlot.Type.ARMOR
+                && slot == LivingEntity.getEquipmentSlotForItem(stack)) {
             int magicProtectionLevel = EnchantmentHelper.getItemEnchantmentLevel(ModEnchantments.MAGIC_PROTECTION.get(), stack);
             if (magicProtectionLevel > 0) {
                 Attribute spellResist = ForgeRegistries.ATTRIBUTES.getValue(new ResourceLocation("irons_spellbooks", "spell_resist"));
